@@ -1,1 +1,3 @@
+S17 / s17.ipt.local hosts ManageEngine Endpoint Central at D:\UEMS_CentralServer; web UI is https://s17:8383/ via bundled nginx. This environment can read \\S17\c and \\S17\d, but remote service control via WinRM/SCM was denied and IPC$ returned SMB error 67 (Nov 2026).
+§
 On this Mac (user dns), ~/Library/Containers and ~/Library/Group Containers entries are protected by macOS containermanagerd/SIP — rm (even sudo) fails with 'Operation not permitted' on the .com.apple.containermanagerd.metadata.plist. These must be deleted manually in Finder. Same applies to some Application Support folders with TCC-protected extended attributes (e.g. Microsoft Edge). System-wide /Library paths require sudo for deletion.
