@@ -1,0 +1,55 @@
+{
+  "bundle_hash": "sha256:1bc0db26a78a12590846eb646748842117456aa3379b93a557ca31c338eb325e",
+  "scanner_version": "skills-guard-v10",
+  "source": "skills-sh/rightnow-ai/openfang/sysadmin",
+  "source_url": "https://github.com/rightnow-ai/openfang/tree/acf2587e46be174c10200489c9a2d23a39a98aeb/crates/openfang-skills/bundled/sysadmin",
+  "verdict": "dangerous",
+  "trust_level": "community",
+  "findings": [
+    {
+      "pattern_id": "systemd_service",
+      "severity": "medium",
+      "category": "persistence",
+      "file": "SKILL.md",
+      "line": 26,
+      "match": "- **systemd** (most modern Linux): `systemctl start|stop|restart|status|enable|disable service-name`.",
+      "description": "references or enables systemd service"
+    },
+    {
+      "pattern_id": "macos_launchd",
+      "severity": "medium",
+      "category": "persistence",
+      "file": "SKILL.md",
+      "line": 27,
+      "match": "- **launchd** (macOS): `launchctl load|unload /Library/LaunchDaemons/plist-file`.",
+      "description": "macOS launch agent/daemon persistence"
+    },
+    {
+      "pattern_id": "sudoers_mod",
+      "severity": "critical",
+      "category": "persistence",
+      "file": "SKILL.md",
+      "line": 42,
+      "match": "- Never edit `/etc/sudoers` directly \u2014 always use `visudo`.",
+      "description": "modifies sudoers (privilege escalation)"
+    },
+    {
+      "pattern_id": "backtick_subshell",
+      "severity": "medium",
+      "category": "execution",
+      "file": "SKILL.md",
+      "line": 14,
+      "match": "- Always back up configuration files before modifying them: `cp file file.bak.$(date +%Y%m%d)`.",
+      "description": "backtick string with command substitution"
+    }
+  ],
+  "rules": [
+    "backtick_subshell",
+    "macos_launchd",
+    "sudoers_mod",
+    "systemd_service"
+  ],
+  "scanned_at": "2026-11-08T11:07:37.158844+00:00",
+  "summary": "sysadmin: dangerous \u2014 4 finding(s) in execution, persistence",
+  "fresh": true
+}
