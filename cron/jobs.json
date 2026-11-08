@@ -1,15 +1,15 @@
 {
   "jobs": [
     {
-      "id": "fc17573d00c5",
+      "id": "7804501ad55b",
       "name": "sync-skills-memory-github",
-      "prompt": "",
+      "prompt": "Run the sync-github.py script to synchronize Hermes skills, memory, and cron jobs with the GitHub repo d1smrnv-lgtm/hermes-skills.",
       "skills": [],
       "skill": null,
       "model": null,
       "provider": null,
       "base_url": null,
-      "script": "sync-github.sh",
+      "script": "sync-github.py",
       "no_agent": true,
       "monitor_script": null,
       "monitor_url": null,
@@ -18,9 +18,9 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 3 * * *",
-        "display": "every day at 03:00"
+        "display": "0 3 * * *"
       },
-      "schedule_display": "every day at 03:00",
+      "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
         "completed": 0
@@ -29,7 +29,7 @@
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "created_at": "2026-11-08T14:33:19.980588+03:00",
+      "created_at": "2026-11-08T17:26:12.446599+03:00",
       "next_run_at": "2026-11-09T03:00:00+03:00",
       "last_run_at": null,
       "last_status": null,
@@ -38,18 +38,18 @@
       "last_delivery_unverified": null,
       "last_failure": null,
       "failure_streak": 0,
-      "deliver": "origin",
+      "deliver": "local",
       "origin": {
         "platform": "local",
-        "chat_id": "local-feb802a741317fd3283595ec1fc6b9fd19b899012d121224a8a8da85e538f977",
+        "chat_id": "local-6a8131e759e44c651f8217e3bed63f60e196616289c6a2c6fd9d37519f0c03ea",
         "chat_name": null,
         "thread_id": null,
-        "user_id": "uid:501",
+        "user_id": "sid:S-1-5-21-512445717-3446044621-3621230117-1576",
         "scope_id": null
       },
       "enabled_toolsets": null,
       "workdir": null
     }
   ],
-  "updated_at": "2026-11-08T17:24:39.912622"
+  "updated_at": "2026-11-08T17:26:40.540848"
 }
