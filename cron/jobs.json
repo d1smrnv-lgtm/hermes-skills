@@ -30,7 +30,7 @@
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-11-08T17:26:12.446599+03:00",
-      "next_run_at": "2026-11-09T03:00:00+03:00",
+      "next_run_at": "2026-11-10T03:00:00+03:00",
       "last_run_at": null,
       "last_status": null,
       "last_error": null,
@@ -48,8 +48,18 @@
         "scope_id": null
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-09T03:00:00+03:00",
+        "dispatched_at": "2026-11-09T03:00:27.413990+03:00",
+        "lateness_seconds": 27.4,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-11-09T03:00:27.542573+03:00",
+        "by": "smirndv2-v1:10556:2036408a073844c0b275d13254dae203"
+      }
     }
   ],
-  "updated_at": "2026-11-08T17:26:40.540848"
+  "updated_at": "2026-11-09T03:00:30.231085"
 }

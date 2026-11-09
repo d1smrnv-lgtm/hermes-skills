@@ -234,11 +234,20 @@ gh auth setup-git
 
 If `--with-token` hangs here, use the hosts.yml fallback from the pitfall above.
 
-### Verify
+### Windows `gh auth login --web` capture pattern (agent-driven)
+
+`gh auth login --web` prints the one-time code and the device URL immediately, then blocks waiting for the browser authorization. A foreground `terminal` call with the default timeout kills the process (and the pending flow) before the user finishes. Keep it alive with `background=true`, capture output to a file, and read the code from that file in a follow-up call.
 
 ```bash
+# 1. Start in background, redirect output
+bash -c 'gh auth login --web --git-protocol https > "$HOME/AppData/Local/hermes/cache/scratch/gh_auth.log" 2>&1'
+# 2. Read the log to extract "One-time code (XXXX-XXXX)" and the URL; tell the user.
+cat "$HOME/AppData/Local/hermes/cache/scratch/gh_auth.log"
+# 3. After the user confirms in the browser, verify:
 gh auth status
 ```
+
+The process must remain running until `gh auth status` succeeds; killing it early cancels the pending device flow.
 
 ---
 

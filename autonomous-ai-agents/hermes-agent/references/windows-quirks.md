@@ -63,3 +63,28 @@ POSIX-newline files to CRLF.
 every Hermes tool and most Windows APIs. Prefer forward slashes in code
 and logs — avoids shell-escaping backslashes in bash.
 
+### Terminal / Working Directory
+
+**Stale cwd after moving/deleting the working directory.** The terminal tool
+persists its shell cwd across calls. If that directory is moved or deleted
+(e.g. you `mv` a clone out of scratch), every subsequent command fails with
+`cd: ... No such file or directory` (exit 126) before it runs — even with
+`workdir` set, the shell still tries to cd into the dead path first. Recovery:
+run a command via `execute_code` (Python, cwd-independent) to do the work, or
+open a fresh terminal session; do not keep retrying shell commands in the
+dead cwd. Prefer doing filesystem moves with `execute_code`/`shutil` when the
+target directory is the current cwd.
+
+**Background processes and output capture.** A foreground command that exceeds
+its timeout is killed, so anything that must stay alive (device-flow auth,
+long builds) must run with `background=true`. To read its output, redirect to
+a file under `$TMPDIR`/scratch and `cat`/read it in a follow-up call — do
+not rely on capturing background stdout directly. Example:
+
+```bash
+# start, keep alive
+bash -c 'gh auth login --web --git-protocol https > "$HOME/AppData/Local/hermes/cache/scratch/gh_auth.log" 2>&1'
+# later
+cat "$HOME/AppData/Local/hermes/cache/scratch/gh_auth.log"
+```
+
