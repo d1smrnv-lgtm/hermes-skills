@@ -29,6 +29,12 @@ Requires the codex CLI and a git repository.
 - Codex installed: `npm install -g @openai/codex`
 - OpenAI auth configured: either `OPENAI_API_KEY` or Codex OAuth credentials
   from the Codex CLI login flow
+  - Interactive (desktop with browser): `codex login` — starts a local callback server
+    on `http://localhost:1455` and opens the browser; if the browser does not open,
+    visit the printed URL manually.
+  - Headless / remote / no browser: `codex login --device-auth` — prints a one-time
+    code and a URL (https://auth.openai.com/codex/device); enter the code there.
+    The code expires in ~15 minutes.
 - **Must run inside a git repository** — Codex refuses to run outside one
 - Use `pty=true` in terminal calls — Codex is an interactive terminal app
 
