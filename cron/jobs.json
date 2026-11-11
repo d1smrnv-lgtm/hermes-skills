@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "id": "7804501ad55b",
+      "id": "4cf525c853ca",
       "name": "sync-skills-memory-github",
       "prompt": "Run the sync-github.py script to synchronize Hermes skills, memory, and cron jobs with the GitHub repo d1smrnv-lgtm/hermes-skills.",
       "skills": [],
@@ -23,16 +23,16 @@
       "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 0
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "created_at": "2026-11-08T17:26:12.446599+03:00",
+      "created_at": "2026-11-10T22:37:58.345604+03:00",
       "next_run_at": "2026-11-12T03:00:00+03:00",
-      "last_run_at": "2026-11-10T03:00:33.194080+03:00",
-      "last_status": "ok",
+      "last_run_at": null,
+      "last_status": null,
       "last_error": null,
       "last_delivery_error": null,
       "last_delivery_unverified": null,
@@ -41,25 +41,25 @@
       "deliver": "local",
       "origin": {
         "platform": "local",
-        "chat_id": "local-6a8131e759e44c651f8217e3bed63f60e196616289c6a2c6fd9d37519f0c03ea",
+        "chat_id": "local-19f4030f18420d61566626e9573d71c893df6b1b92497a9c33115e38acd393a9",
         "chat_name": null,
         "thread_id": null,
-        "user_id": "sid:S-1-5-21-512445717-3446044621-3621230117-1576",
+        "user_id": "uid:501",
         "scope_id": null
       },
       "enabled_toolsets": null,
       "workdir": null,
       "last_dispatch": {
         "scheduled_at": "2026-11-11T03:00:00+03:00",
-        "dispatched_at": "2026-11-11T03:00:28.713466+03:00",
-        "lateness_seconds": 28.7,
-        "kind": "on_time"
+        "dispatched_at": "2026-11-11T03:15:58.144051+03:00",
+        "lateness_seconds": 958.1,
+        "kind": "late"
       },
       "fire_claim": {
-        "at": "2026-11-11T03:00:28.763652+03:00",
-        "by": "smirndv2-v1:10556:54069a90b2d14936b8ee56158b63a4de"
+        "at": "2026-11-11T03:15:58.201000+03:00",
+        "by": "MacBook-Air-Denis.local:28460:db3778a5756341789ff73169846fa24d"
       }
     }
   ],
-  "updated_at": "2026-11-11T03:00:32.620873"
+  "updated_at": "2026-11-11T03:15:58.201398+03:00"
 }
