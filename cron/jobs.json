@@ -59,7 +59,67 @@
         "at": "2026-11-12T03:00:19.951127+03:00",
         "by": "MacBook-Air-Denis.local:80496:b0c374cd0876413fae7655d34bc01500"
       }
+    },
+    {
+      "id": "7804501ad55b",
+      "name": "sync-skills-memory-github",
+      "prompt": "Run the sync-github.py script to synchronize Hermes skills, memory, and cron jobs with the GitHub repo d1smrnv-lgtm/hermes-skills.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "sync-github.py",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *",
+        "display": "0 3 * * *"
+      },
+      "schedule_display": "0 3 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 3
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-11-08T17:26:12.446599+03:00",
+      "next_run_at": "2026-11-13T03:00:00+03:00",
+      "last_run_at": "2026-11-11T03:00:38.930543+03:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "last_failure": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "local",
+        "chat_id": "local-6a8131e759e44c651f8217e3bed63f60e196616289c6a2c6fd9d37519f0c03ea",
+        "chat_name": null,
+        "thread_id": null,
+        "user_id": "sid:S-1-5-21-512445717-3446044621-3621230117-1576",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-11-12T03:00:00+03:00",
+        "dispatched_at": "2026-11-12T03:00:28.511091+03:00",
+        "lateness_seconds": 28.5,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-11-12T03:00:28.561622+03:00",
+        "by": "smirndv2-v1:10556:76bc0e1a57e448a599daa7a55ff87f2a"
+      }
     }
   ],
-  "updated_at": "2026-11-12T03:00:19.951544+03:00"
+  "updated_at": "2026-11-12T03:00:31.983649"
 }
