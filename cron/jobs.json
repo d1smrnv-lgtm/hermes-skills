@@ -23,16 +23,16 @@
       "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-11-10T22:37:58.345604+03:00",
-      "next_run_at": "2026-11-12T03:00:00+03:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-11-13T03:00:00+03:00",
+      "last_run_at": "2026-11-11T03:16:02.175747+03:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "last_delivery_unverified": null,
@@ -50,16 +50,16 @@
       "enabled_toolsets": null,
       "workdir": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-11T03:00:00+03:00",
-        "dispatched_at": "2026-11-11T03:15:58.144051+03:00",
-        "lateness_seconds": 958.1,
-        "kind": "late"
+        "scheduled_at": "2026-11-12T03:00:00+03:00",
+        "dispatched_at": "2026-11-12T03:00:19.832168+03:00",
+        "lateness_seconds": 19.8,
+        "kind": "on_time"
       },
       "fire_claim": {
-        "at": "2026-11-11T03:15:58.201000+03:00",
-        "by": "MacBook-Air-Denis.local:28460:db3778a5756341789ff73169846fa24d"
+        "at": "2026-11-12T03:00:19.951127+03:00",
+        "by": "MacBook-Air-Denis.local:80496:b0c374cd0876413fae7655d34bc01500"
       }
     }
   ],
-  "updated_at": "2026-11-11T03:15:58.201398+03:00"
+  "updated_at": "2026-11-12T03:00:19.951544+03:00"
 }
