@@ -23,15 +23,15 @@
       "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-11-10T22:37:58.345604+03:00",
-      "next_run_at": "2026-11-15T03:00:00+03:00",
-      "last_run_at": "2026-11-13T03:00:38.811080+03:00",
+      "next_run_at": "2026-11-16T03:00:00+03:00",
+      "last_run_at": "2026-11-14T03:00:44.693611+03:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -50,14 +50,14 @@
       "enabled_toolsets": null,
       "workdir": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-14T03:00:00+03:00",
-        "dispatched_at": "2026-11-14T03:00:27.892359+03:00",
-        "lateness_seconds": 27.9,
+        "scheduled_at": "2026-11-15T03:00:00+03:00",
+        "dispatched_at": "2026-11-15T03:00:30.466458+03:00",
+        "lateness_seconds": 30.5,
         "kind": "on_time"
       },
       "fire_claim": {
-        "at": "2026-11-14T03:00:28.063931+03:00",
-        "by": "smirndv2-v1:10556:9da84b01e8ae4c5c8f7437eebe898b7f"
+        "at": "2026-11-15T03:00:30.527663+03:00",
+        "by": "smirndv2-v1:10556:604746ae936f4ccbacd3966528bd4b00"
       }
     },
     {
@@ -83,15 +83,15 @@
       "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 5
+        "completed": 6
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-11-08T17:26:12.446599+03:00",
-      "next_run_at": "2026-11-15T03:00:00+03:00",
-      "last_run_at": "2026-11-13T03:00:38.700151+03:00",
+      "next_run_at": "2026-11-16T03:00:00+03:00",
+      "last_run_at": "2026-11-14T03:00:44.892250+03:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -110,16 +110,16 @@
       "enabled_toolsets": null,
       "workdir": null,
       "last_dispatch": {
-        "scheduled_at": "2026-11-14T03:00:00+03:00",
-        "dispatched_at": "2026-11-14T03:00:27.892359+03:00",
-        "lateness_seconds": 27.9,
+        "scheduled_at": "2026-11-15T03:00:00+03:00",
+        "dispatched_at": "2026-11-15T03:00:30.466458+03:00",
+        "lateness_seconds": 30.5,
         "kind": "on_time"
       },
       "fire_claim": {
-        "at": "2026-11-14T03:00:28.054478+03:00",
-        "by": "smirndv2-v1:10556:6c5552f91f3a4b8cb5ebdf66953408bc"
+        "at": "2026-11-15T03:00:30.590279+03:00",
+        "by": "smirndv2-v1:10556:78f9a80a1ca64b6bad4943acfdbfc080"
       }
     }
   ],
-  "updated_at": "2026-11-14T03:00:35.106302"
+  "updated_at": "2026-11-15T03:00:35.058409"
 }
