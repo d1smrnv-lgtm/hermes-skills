@@ -23,7 +23,7 @@
       "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 5
+        "completed": 6
       },
       "enabled": true,
       "state": "scheduled",
@@ -31,12 +31,15 @@
       "paused_reason": null,
       "created_at": "2026-11-10T22:37:58.345604+03:00",
       "next_run_at": "2026-11-18T03:00:00+03:00",
-      "last_run_at": "2026-11-16T03:00:38.596379+03:00",
+      "last_run_at": "2026-11-16T03:01:11.006013+03:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "last_delivery_unverified": null,
-      "last_failure": null,
+      "last_failure": {
+        "at": "2026-11-15T05:53:00.623811+03:00",
+        "detail": "Script exited with code 1\nstderr:\nошибка: git -C /Users/dns/.hermes/sync/hermes-skills pull --ff-only\nstderr: fatal: unable to access 'https://github.com/d1smrnv-lgtm/hermes-skills.git/': Resolving timed out after 910419 milliseconds"
+      },
       "failure_streak": 0,
       "deliver": "local",
       "origin": {
@@ -51,75 +54,15 @@
       "workdir": null,
       "last_dispatch": {
         "scheduled_at": "2026-11-17T03:00:00+03:00",
-        "dispatched_at": "2026-11-17T03:00:30.649315+03:00",
-        "lateness_seconds": 30.6,
-        "kind": "on_time"
+        "dispatched_at": "2026-11-17T05:12:36.924419+03:00",
+        "lateness_seconds": 7956.9,
+        "kind": "catch_up"
       },
       "fire_claim": {
-        "at": "2026-11-17T03:00:30.735148+03:00",
-        "by": "smirndv2-v1:10556:02303b95694d465ab4cf504cb6e02823"
-      }
-    },
-    {
-      "id": "7804501ad55b",
-      "name": "sync-skills-memory-github",
-      "prompt": "Run the sync-github.py script to synchronize Hermes skills, memory, and cron jobs with the GitHub repo d1smrnv-lgtm/hermes-skills.",
-      "skills": [],
-      "skill": null,
-      "model": null,
-      "provider": null,
-      "base_url": null,
-      "script": "sync-github.py",
-      "no_agent": true,
-      "monitor_script": null,
-      "monitor_url": null,
-      "monitor_state": null,
-      "context_from": null,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 3 * * *",
-        "display": "0 3 * * *"
-      },
-      "schedule_display": "0 3 * * *",
-      "repeat": {
-        "times": null,
-        "completed": 8
-      },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-11-08T17:26:12.446599+03:00",
-      "next_run_at": "2026-11-18T03:00:00+03:00",
-      "last_run_at": "2026-11-16T03:00:38.720184+03:00",
-      "last_status": "ok",
-      "last_error": null,
-      "last_delivery_error": null,
-      "last_delivery_unverified": null,
-      "last_failure": null,
-      "failure_streak": 0,
-      "deliver": "local",
-      "origin": {
-        "platform": "local",
-        "chat_id": "local-6a8131e759e44c651f8217e3bed63f60e196616289c6a2c6fd9d37519f0c03ea",
-        "chat_name": null,
-        "thread_id": null,
-        "user_id": "sid:S-1-5-21-512445717-3446044621-3621230117-1576",
-        "scope_id": null
-      },
-      "enabled_toolsets": null,
-      "workdir": null,
-      "last_dispatch": {
-        "scheduled_at": "2026-11-17T03:00:00+03:00",
-        "dispatched_at": "2026-11-17T03:00:30.649315+03:00",
-        "lateness_seconds": 30.6,
-        "kind": "on_time"
-      },
-      "fire_claim": {
-        "at": "2026-11-17T03:00:30.762697+03:00",
-        "by": "smirndv2-v1:10556:b926a7d6c6a141f3a28dcbbaffb8fa32"
+        "at": "2026-11-17T05:12:37.056228+03:00",
+        "by": "MacBook-Air-Denis.local:1773:1968f620e03348359b0f33a5b6aed73a"
       }
     }
   ],
-  "updated_at": "2026-11-17T03:00:36.920031"
+  "updated_at": "2026-11-17T05:12:37.056699+03:00"
 }
