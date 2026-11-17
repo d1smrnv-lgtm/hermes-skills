@@ -110,6 +110,10 @@ ps aux --sort=-%cpu | head -10
 ps aux --sort=-%mem | head -10
 ```
 
+## Remote SSH Access With a User-Entered Password
+
+Never request or accept an SSH password in chat and never type it yourself. Do not assume a background PTY terminal tab is an interactive input surface: the in-app Terminal pane may be a read-only output mirror even while the child process awaits input. Do not tell the user to type there unless direct input capability has been confirmed. If password entry is unavailable, stop the password-auth attempt and use a user-operated SSH client or arrange key-based access; do not repeatedly relaunch prompts or imply authentication succeeded. Once authenticated through an approved route, verify the SSH session and inspect host identity, OS, privileges, resources, and installed services before making changes.
+
 ## Troubleshooting
 
 | Problem | Commands |
